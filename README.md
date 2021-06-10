@@ -18,3 +18,14 @@ Legend:
 
 <p>Image credit: Image was adopted and modified based on <i>Coursera course - Customising your models with TensorFlow 2</i>'s capstone project image.</p>
 
+---
+
+### Dataset
+
+We are using the **Chinese (Mandarin) - English** language dataset from http://www.manythings.org/anki/.
+
+This dataset consists of over 24,697 pairs of sentences in English and Chinese.
+
+Download the dataset from <a href='http://www.manythings.org/anki/cmn-eng.zip'>this link</a>, and extract the `cmn.txt` raw text file into the path `<repo_root>/data/`.
+
+---
