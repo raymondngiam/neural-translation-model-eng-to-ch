@@ -29,3 +29,17 @@ This dataset consists of over 24,697 pairs of sentences in English and Chinese.
 Download the dataset from <a href='http://www.manythings.org/anki/cmn-eng.zip'>this link</a>, and extract the `cmn.txt` raw text file into the path `<repo_root>/data/`.
 
 ---
+
+### Data Preprocessing
+
+Notebook: <a href='01-DataPreprocessing.ipynb'>01-DataPreprocessing.ipynb</a>
+
+Raw data from the dataset is preprocessed to split the chinese texts into an array of individual characters, appended with `<start>` and `<end>` tokens.
+
+A sample of 5 preprocessed text sequences is as shown below:
+
+<img src='images/DataPreprocessing-01.png'>
+
+Final preprocessed dataset consists of `24089` pairs of english-to-chinese translation sentenses.
+
+---
