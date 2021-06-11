@@ -43,3 +43,21 @@ A sample of 5 preprocessed text sequences is as shown below:
 Final preprocessed dataset consists of `24089` pairs of english-to-chinese translation sentenses.
 
 ---
+
+### Tokenization
+
+Notebook: <a href='02-Tokenization.ipynb'>02-Tokenization.ipynb</a>
+
+The chinese characters is then tokenized using `tensorflow.keras.preprocessing.text.Tokenizer`.
+
+Word count for top 10 highest frequency characters is as shown below:
+
+<img src='images/Tokenization-01.png'>
+
+There are `3438` unique characters in the chinese sequences, include `<start>`, `<end>` tokens and punctuation marks like `。，？！`.
+
+With the tokenization completed, the individual chinese characters in the sentences are then converted into their respective tokens as shown below:
+
+<img src='images/Tokenization-02.png'>
+
+---
