@@ -16,7 +16,7 @@ Legend:
 
 <img src='images/neural_translation_model_key.png'>
 
-<p>Image credit: Image was adopted and modified based on <i>Coursera course - Customising your models with TensorFlow 2</i>'s capstone project image.</p>
+<p><b>Image credit:</b> Image was adopted and modified based on Coursera course <i>Customising your models with TensorFlow 2</i>'s capstone project image.</p>
 
 ---
 
@@ -102,3 +102,9 @@ The training and validation loss curve is shown below:
 <img src='images/loss_curve.png'>
 
 ---
+
+### Translation result
+
+Notebook: <a href='04-TranslateEnglishToChinese.ipynb'>04-TranslateEnglishToChinese.ipynb</a>
+
+<img src='images/translation-01.png'>
