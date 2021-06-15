@@ -64,7 +64,13 @@ With the tokenization completed, the individual chinese characters in the senten
 
 ### Model Training
 
-Notebook: <a href='03-ModelTraining.ipynb'>03-ModelTraining.ipynb</a>
+Notebook: 
+- <a href='03-1-ModelTrainingDevScratchPad.ipynb'>03-1-ModelTrainingDevScratchPad.ipynb</a>
+- <a href='03-2-ModelTrainingFull.ipynb'>03-2-ModelTrainingFull.ipynb</a>
+
+Source:
+- <a href='src/model.py'>model.py</a>
+- <a href='src/train_translation_model.py'>train_translation_model.py</a>
 
 **Encoder model**
 
@@ -85,7 +91,7 @@ The model was trained with a `Nvidia GTX1650Ti` GPU using the following configur
 |:-|:-:|
 |Optimizer|SGD(learning_rate=0.01,momentum=0.9,nesterov=True)|
 |Loss|SparseCategoricalCrossentropy|
-|Epoch|150|
+|Epoch|200|
 
 **Training result**
 
@@ -93,18 +99,21 @@ The training result is as follows:
 
 |Metric|Value|
 |:-|:-:|
-|Training time|8hr 14min|
-|Lowest training loss|0.572|
-|Lowest validation loss|0.565|
+|Training time|13hr 30min|
+|Lowest training loss|0.5775|
+|Lowest validation loss|0.7416|
+|Highest training accuracy|0.5750|
+|Highest validation accuracy|0.4958|
 
 The training and validation loss curve is shown below:
 
 <img src='images/loss_curve.png'>
+<img src='images/accuracy_curve.png'>
 
----
-
-### Translation result
+**Translation result**
 
 Notebook: <a href='04-TranslateEnglishToChinese.ipynb'>04-TranslateEnglishToChinese.ipynb</a>
 
 <img src='images/translation-01.png'>
+
+---
